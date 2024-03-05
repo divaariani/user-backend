@@ -1,7 +1,7 @@
 {
-  "name": "banoo",
+  "name": "practice",
   "version": "1.0.0",
-  "description": "pondmate endpoint",
+  "description": "endpoint",
   "main": "index.js",
   "scripts": {
     "test": "-",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/divaariani/pondmate-backend"
+    "url": "github.com/divaariani/user-backend-practice"
   },
   "keywords": [
-    "pondmate"
+    "practice"
   ],
-  "author": "pondmate",
+  "author": "practice",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.3",
