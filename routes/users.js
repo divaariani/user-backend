@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.get('/', user_Act.getUsers);
 router.get('/:roll', user_Act.getSpecUser);
+router.get('/byName/:name', user_Act.getSpecUserByName);
 router.post('/', user_Act.createUser);
 router.patch('/:roll', user_Act.updateUser);
 router.delete('/:roll', user_Act.deleteUser);

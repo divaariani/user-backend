@@ -58,10 +58,21 @@ const createUser = async (req, res) => {
     }
 };
 
+const getSpecUserByName = async (req, res) => {
+    const name = req.params.name;
+    try {
+        const user = await User.findOne({ name: name });
+        res.status(200).json(user);
+    } catch (error) {
+        res.status(404).json({ message: error.message });
+    }
+};
+
 module.exports = {
     getUsers,
     getSpecUser,
-    createUser,
     updateUser,
     deleteUser,
+    createUser,
+    getSpecUserByName,
 };
